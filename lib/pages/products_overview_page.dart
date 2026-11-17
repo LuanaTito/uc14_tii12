@@ -11,7 +11,7 @@ import 'package:minha_loja/models/cart.dart';
 enum FilterOptions { favorite, all }
 
 class ProductsOverviewPage extends StatefulWidget {
-  const ProductsOverviewPage({Key? key}) : super(key: key);
+  const ProductsOverviewPage({super.key});
 
   @override
   State<ProductsOverviewPage> createState() => _ProductsOverviewPageState();
