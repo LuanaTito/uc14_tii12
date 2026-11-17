@@ -1,7 +1,8 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
-import 'package:shop/models/cart_item.dart';
-import 'package:shop/models/product.dart';
+import 'package:minha_loja/models/cart_item.dart';
+import 'package:minha_loja/models/product.dart';
 
 class Cart with ChangeNotifier {
   Map<String, CartItem> _items = {};
@@ -40,7 +41,7 @@ class Cart with ChangeNotifier {
         () => CartItem(
           id: Random().nextDouble().toString(),
           productId: product.id,
-          name: product.name,
+          name: product.nome,
           quantity: 1,
           price: product.price,
         ),
