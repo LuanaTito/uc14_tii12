@@ -23,11 +23,11 @@ final dummyProduct = [
     imageUrl:
         'https://31270.cdn.simplo7.net/static/31270/sku/173210647776831.jpg',
   ),
-  Product(
-    id: '04',
-    nome: 'Calça',
-    description: 'Calça com tecido leve ',
-    price: 60.00,
-    imageUrl: 'https://img.ltwebstatic.com/images3_spmp/2024/05/28/0d/1716901113a9892d3a229da43ab61592fa14e69fe3_thumbnail_750x999.jpg',
-  ),
+  // Product(
+  //   id: '04',
+  //   nome: 'Calça',
+  //   description: 'Calça com tecido leve ',
+  //   price: 60.00,
+  //   imageUrl: 'https://img.ltwebstatic.com/images3_spmp/2024/05/28/0d/1716901113a9892d3a229da43ab61592fa14e69fe3_thumbnail_750x999.jpg',
+  // ),
 ];
