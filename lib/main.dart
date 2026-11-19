@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:minha_loja/pages/cart_page.dart';
+import 'package:minha_loja/pages/orders_page.dart';
+import 'package:minha_loja/pages/product_detail_page.dart';
 import 'package:minha_loja/pages/products_overview_page.dart';
+import 'package:minha_loja/pages/products_page.dart';
 import 'package:minha_loja/utils/app_routes.dart';
 import 'package:provider/provider.dart';
 import 'package:minha_loja/models/product_list.dart';
@@ -37,10 +41,10 @@ class MyApp extends StatelessWidget {
         // Rotas de todas as página que forem construida no projeto.
         routes: {
           AppRoutes.home: (ctx) => const ProductsOverviewPage(),
-          //   AppRoutes.productDetail: (ctx) => const ProductDetailPage(),
-          //   AppRoutes.cart: (ctx) => const CartPage(),
-          //   AppRoutes.orders: (ctx) => const OrdersPage(),
-          //   AppRoutes.products: (ctx) => const ProductsPage(),
+          AppRoutes.productDetail: (ctx) => const ProductDetailPage(),
+          AppRoutes.cart: (ctx) => const CartPage(),
+          AppRoutes.orders: (ctx) => const OrdersPage(),
+          AppRoutes.products: (ctx) => const ProductsPage(),
           //   AppRoutes.productForm: (ctx) => const ProductFormPage(),
         },
         debugShowCheckedModeBanner: false,

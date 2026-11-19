@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:minha_loja/components/app_drawer.dart';
+import 'package:minha_loja/components/product_item.dart';
+
 import 'package:minha_loja/models/product_list.dart';
 import 'package:minha_loja/utils/app_routes.dart';
 import 'package:provider/provider.dart';
@@ -9,7 +11,7 @@ class ProductsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ProductList productList = Provider.of(context);
+    final ProductList products = Provider.of(context);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Gerenciar Produtos'),
@@ -27,7 +29,7 @@ class ProductsPage extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         child: ListView.builder(
           itemBuilder: (ctx, i) => Column(
-            children: [ProductItem(Produts.items[i]), const Divider()],
+            children: [ProductItem(products.items[i]), const Divider()],
           ),
         ),
       ),

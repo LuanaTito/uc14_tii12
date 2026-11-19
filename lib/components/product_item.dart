@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:minha_loja/models/product.dart';
 import 'package:minha_loja/models/product_list.dart';
@@ -28,7 +27,7 @@ class ProductItem extends StatelessWidget {
             ),
             IconButton(
               icon: const Icon(Icons.delete),
-              color: Theme.of(context).errorColor,
+              color: Theme.of(context).colorScheme.error,
               onPressed: () {
                 showDialog<bool>(
                   context: context,
